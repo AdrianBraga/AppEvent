@@ -1,0 +1,26 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+  <title>AppEvent - Encontre os melhores eventos da sua cidade nesse momento</title>
+  <link rel="stylesheet" href="/css/home.css">
+{% endblock head %}
+
+{% block content %}
+  <div class="banner">
+    <div class="text-banner">
+      Todo mundo precisa de um pouco de diversão
+    </div>
+  </div>
+
+  <section class="content">
+    <h1>Viva e compartilhe momentos únicos a cada evento</h1>
+    <p>
+      Plataforma completa na qual você tem total autonomia para cadastrar, genrencia e acompanhar
+      todas as informações de seu evento e até mesmo de outros evento que estão acontecendo ao redor do mundo. 
+    </p>
+  </section>
+
+  <section class="cards">
+    {% include 'components/card.njk' %}
+  </section>
+{% endblock content %}
