@@ -1,0 +1,32 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+  <title>AppEvent - Lista de eventos</title>
+  <link rel="stylesheet" href="/css/listEvents.css">
+{% endblock head %}
+
+{% block content %}
+  <div class="table-container">
+    <table style='width: 100%'>
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Data</th>
+        <th>Cidade</th>
+        <th>Organizador</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      {% for card in cards %}
+        <tr>
+          <td>{{card.title}}</td>
+          <td>{{card.date}}</td>
+          <td>{{card.city}} - {{card.uf}}</td>
+          <td>{{card.organizer}}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+    </div>
+{% endblock content %}
