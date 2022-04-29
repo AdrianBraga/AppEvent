@@ -1,5 +1,6 @@
 const express = require("express");
 const nunjucks = require('nunjucks');
+require('dotenv/config');
 
 const app = express()
 const routes = require('./app/routes/routes');
