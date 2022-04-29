@@ -18,7 +18,7 @@ Para rodar a aplicação, você precisa ter instalado o Git, Node
 
 ```bash
 # Clonar o repositório
-$ git clone https://github.com/AdrianBraga/test-linkapi.git
+$ git clone https://github.com/AdrianBraga/AppEvent.git
 
 # Entrar no diretório
 $ cd appEvent
